@@ -51,6 +51,29 @@ stem from user error.
 
 ---
 
+## Threat Scope Assessment
+
+Based on the evidence gathered, this attack appears to 
+be a targeted phishing campaign directed specifically 
+at H. Harris rather than a broader attack against 
+the organisation's infrastructure. 
+
+Key indicators supporting this assessment:
+- The phishing email was sent to a single recipient
+- No other employees appear in the logs as recipients 
+  of the same malicious URL
+- The firewall successfully blocked the connection 
+  before any data could be transmitted
+- No lateral movement or internal network activity 
+  has been identified at this stage
+
+At the time of this report there is no evidence to 
+suggest the organisation faces a wider or ongoing 
+threat. However continued monitoring is recommended 
+and the affected workstation 10.20.2.17 should be 
+inspected to rule out any compromise prior to the 
+firewall block.
+
 ## Key Lessons
 - URL shorteners like bit.ly are commonly used in 
   phishing to disguise malicious destinations
