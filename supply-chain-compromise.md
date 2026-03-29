@@ -68,7 +68,7 @@ Applying the From Base64 operation alone produced
 garbled, unreadable output as shown below.
 
 ### CyberChef — From Base64 Only
-![From Base64](images/From%Base64.png)
+![From Base64](images/From%20Base64.png)
 *Garbled output confirming UTF-16LE decode 
 step is required*
 
@@ -79,7 +79,7 @@ UTF-16LE (1200) selected which revealed the full
 plaintext script.
 
 ### CyberChef — Fully Decoded Output
-![Decoded Output](images/Decode%text.png)
+![Decoded Output](images/Decode%20text.png)
 *Full PowerShell dropper script revealed after 
 applying UTF-16LE decode*
 
