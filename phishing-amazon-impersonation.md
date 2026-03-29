@@ -32,13 +32,13 @@ analysis tool and it came back as a malicious URL.
 ## Evidence
 
 ### Initial Firewall Alert
-![Firewall Log](Firewall%20log.png)
+![Firewall Log](images/Firewall%20log.png)
 
 ### Splunk Investigation Log
-![Splunk Investigation Log](splunk%20analysis.png)
+![Splunk Log](images/splunk%20analysis.png)
 
 ### URL Threat Intelligence Analysis
-![URL Analysis](URL%20analysis.png)
+![URL Analysis](images/URL%20analysis.png)
 
 ---
 
