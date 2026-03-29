@@ -22,7 +22,7 @@ and I saw a bitly link,which suggests the sender is trying to hide
 the actual URL. I copied the bitly link and pasted it into Splunk,
 which revealed the attempt to access the website, by the user, and
 the initial email. I noticed that the email came from
-"urgents@amazon.biz", which immediately suggested it was a phising
+"urgents@amazon.biz", which immediately suggested it was a phishing
 attempt, as any correspondance from Amazon would come from "amazon.com".
 After noticing this, I copy and pasted the URL into the resident URL
 analysis tool and it came back as a malicious URL.
@@ -43,7 +43,7 @@ analysis tool and it came back as a malicious URL.
 ---
 
 ## Determination
-True Positive — escalated for the following reasons:
+True Positive - escalated for the following reasons:
 I believe that the user 'H.Harris' needs dedicated
 training in the dangers of phishing, what to look out
 for and educated on the high percentage of attacks that
