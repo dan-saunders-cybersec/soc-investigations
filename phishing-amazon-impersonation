@@ -31,11 +31,14 @@ analysis tool and it came back as a malicious URL.
 
 ## Evidence
 
-  ![Firewall Log](https://github.com/user-attachments/assets/0d1f0dc2-f570-4e3a-aaa6-aef06bff0fb6)
+### Initial Firewall Alert
+![Firewall Log](Firewall%20log.png)
 
-  ![Splunk investigation log](https://github.com/user-attachments/assets/72a3cb9f-c96c-4604-9983-3928ec19d670)
+### Splunk Investigation Log
+![Splunk Investigation Log](splunk%20analysis.png)
 
-  ![URL threat intelligence analysis](https://github.com/user-attachments/assets/50c56e1e-1515-442f-b89a-abd482c6fce4)
+### URL Threat Intelligence Analysis
+![URL Analysis](URL%20analysis.png)
 
 ---
 
