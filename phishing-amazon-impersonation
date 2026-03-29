@@ -1,0 +1,61 @@
+# SOC Investigation - Phishing Campaign (True Positive)
+
+**Platform:** TryHackMe - SOC Simulator  
+**Date:** 29/03/2026  
+**Severity:** High  
+**Outcome:** True Positive - Escalated
+
+---
+
+## Summary
+A high severity alert was triggered when a user clicked 
+a confirmed malicious URL contained within a phishing 
+email impersonating Amazon. The firewall successfully 
+blocked the outbound connection however the incident 
+was escalated due to my belief the user needs dedicated training
+
+---
+
+## Investigation Process
+The first port of call was analyse the firewall log that was flagged
+and I saw a bitly link,which suggests the sender is trying to hide
+the actual URL. I copied the bitly link and pasted it into Splunk,
+which revealed the attempt to access the website, by the user, and
+the initial email. I noticed that the email came from
+"urgents@amazon.biz", which immediately suggested it was a phising
+attempt, as any correspondance from Amazon would come from "amazon.com".
+After noticing this, I copy and pasted the URL into the resident URL
+analysis tool and it came back as a malicious URL.
+
+---
+
+## Evidence
+
+  ![Firewall Log](https://github.com/user-attachments/assets/0d1f0dc2-f570-4e3a-aaa6-aef06bff0fb6)
+
+  ![Splunk investigation log](https://github.com/user-attachments/assets/72a3cb9f-c96c-4604-9983-3928ec19d670)
+
+  ![URL threat intelligence analysis](https://github.com/user-attachments/assets/50c56e1e-1515-442f-b89a-abd482c6fce4)
+
+---
+
+## Determination
+True Positive — escalated for the following reasons:
+I believe that the user 'H.Harris' needs dedicated
+training in the dangers of phishing, what to look out
+for and educated on the high percentage of attacks that
+stem from user error.
+
+---
+
+## Key Lessons
+- URL shorteners like bit.ly are commonly used in 
+  phishing to disguise malicious destinations
+- Firewall blocks do not guarantee no compromise 
+  occurred - endpoint investigation still required
+- Human error accounts for the majority of successful 
+  breaches - user awareness training is a critical 
+  remediation step
+- Patterns across multiple alerts involving the same 
+  user should always be flagged even if individual 
+  incidents appear contained
